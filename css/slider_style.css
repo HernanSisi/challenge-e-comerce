@@ -1,0 +1,188 @@
+#newslether {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 70vh;
+    transition: 0.25s;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 600px;
+    max-width: 1200px;
+    width: calc(100% - 100px);
+    height: 90%;
+    justify-content: space-evenly;
+}
+
+.slider__card--active {
+    flex-grow: 10000;
+    transform: scale(1);
+    /* max-width: 600px; */
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+}
+
+.slider__card:not(.slider__card--active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+.slider__card:not(.slider__card--active) .slider__card--shadow {
+    bottom: -40px;
+    /* box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black; */
+    background-image: linear-gradient(360deg, #000, #0000);
+}
+
+.slider__card:not(.slider__card--active) .slider__card___label {
+    bottom: 10px;
+    left: 10px;
+}
+
+.slider__card___label {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 40px;
+    transition: .5s cubic-bezier(.05, .61, .41, .95);
+}
+
+.slider__card--active .slider__card___label {
+    bottom: 20px;
+    left: 20px;
+}
+
+.slider__card--shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.slider__card {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background: var(--optionBackground);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.slider__card a {
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.slider__card:not(.slider__card--active) a {
+    display: none;
+}
+
+.slider__card___icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: chartreuse;
+}
+
+.slider__card___icon i {
+    color: tomato;
+    font-family: 'pictogramas';
+    font-size: larger;
+    font-weight: 500;
+}
+
+.slider__card:nth-child(1) i {
+    color: aqua;
+}
+
+.slider__card:nth-child(2) i {
+    color: blueviolet;
+}
+
+.slider__card:nth-child(3) i {
+    color: yellowgreen;
+}
+
+.slider__card:nth-child(4) i {
+    color: springgreen;
+}
+
+.slider__card:nth-child(5) i {
+    color: tomato;
+}
+
+.slider__card___info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: #fff;
+    white-space: pre;
+    text-shadow: black 5px 2px 10px;
+}
+
+.slider__card___info div {
+    position: relative;
+    transition: .5s cubic-bezier(.05, .61, .41, .95), opacity .5s ease-out;
+}
+
+.slider__card___main div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.slider__card___main {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.slider__card___sub {
+    transition-delay: .1s;
+}
+
+.slider__card:not(.slider__card--active) .slider__card___info div {
+    left: 20px;
+    opacity: 0;
+}
+
+.order1 {
+    order: 1;
+    background-color: #fff;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4 {
+    order: 4;
+}
+
+.order5 {
+    order: 5;
+}

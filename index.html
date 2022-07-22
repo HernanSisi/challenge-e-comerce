@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
+<html data-theme="dark" lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mangotar - Home</title>
+    <style type="text/css" charset="utf-8">
+        @font-face {
+            src: url(./font/pictogramas.ttf) format('truetype');
+            font-family: 'pictogramas';
+        }
+    </style>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="stylesheet" href="./css/slider_style.css">
 </head>
+
 <body>
-    
+    <main>
+        <section id="newslether">
+            <div class="slider">
+                <div id="slider__card--01" class="slider__card slider__card--active" style="--optionBackground:url(../img/imagen-002.jpg);" onclick="changeSlider(this)">
+                    <div class="slider__card--shadow"></div>
+                    <div class="slider__card___label">
+                        <div class="slider__card___icon"><i>&#x6c;</i></div>
+                        <div class="slider__card___info">
+                            <div class="slider__card___main">Novedades</div>
+                            <div class="slider__card___sub">Descubre los nuevos mangas que ingresaron a nuestra tienda</div>
+                        </div>
+                    </div>
+                    <a href="#1"></a>
+                </div>
+                <div id="slider__card--02" class="slider__card" style="--optionBackground:url(../img/imagen-003.jpg);" onclick="changeSlider(this)">
+                    <div class="slider__card--shadow"></div>
+                    <div class="slider__card___label">
+                        <div class="slider__card___icon"><i>&#x65;</i></div>
+                        <div class="slider__card___info">
+                            <div class="slider__card___main">Furror en ventas</div>
+                            <div class="slider__card___sub">Kimetsu No Yaiba, el manga mas vendido de la ultima semana</div>
+                        </div>
+                    </div>
+                    <a href="#2"></a>
+                </div>
+                <div id="slider__card--03" class="slider__card" style="--optionBackground:url(../img/imagen-004.jpg);" onclick="changeSlider(this)">
+                    <div class="slider__card--shadow"></div>
+                    <div class="slider__card___label">
+                        <div class="slider__card___icon"><i>&#x67;</i></div>
+                        <div class="slider__card___info">
+                            <div class="slider__card___main">Promocion</div>
+                            <div class="slider__card___sub">Descubnre nuestras promociones para esta semana</div>
+                        </div>
+                    </div>
+                    <a href="#3"></a>
+                </div>
+                <div id="slider__card--04" class="slider__card" style="--optionBackground:url(../img/imagen-005.jpg);" onclick="changeSlider(this)">
+                    <div class="slider__card--shadow"></div>
+                    <div class="slider__card___label">
+                        <div class="slider__card___icon"><i>&#x6b;</i></div>
+                        <div class="slider__card___info">
+                            <div class="slider__card___main">Mejor valorado</div>
+                            <div class="slider__card___sub">Jujutsu Kaisen, el manga mejor valorado</div>
+                        </div>
+                    </div>
+                    <a href="#4"></a>
+                </div>
+                <div id="slider__card--05" class="slider__card order1" style="--optionBackground:url(../img/imagen-001.jpg);" onclick="changeSlider(this)">
+                    <div class="slider__card--shadow"></div>
+                    <div class="slider__card___label">
+                        <div class="slider__card___icon"><i>&#x75;</i></div>
+                        <div class="slider__card___info">
+                            <div class="slider__card___main">Desde Japon</div>
+                            <div class="slider__card___sub">Descubre los nuevos mangas que salieron en Japon</div>
+                        </div>
+                    </div>
+                    <a href="#5"></a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+<script src="./js/main.js"></script>
+<script src="./js/slider.js"></script>
 </html>
