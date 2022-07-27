@@ -1,6 +1,37 @@
-html[data-theme='light']{
-
+html[data-theme='light'] {
+    --backgroundPrimario: #eff0f3;
+    --backgroundSecundario: #fffffe;
+    --backgroundTerciario: #f60;
+    --ColorLetrasPrimario: #0d0d0d;
+    --ColorLetrasSecundario: #2a2a2a;
+    --ColorLetrasTerciario: #eff0f3;
+    --colorBotonPrimario: #ff8e3c;
+    --colorBotonSecundario: #d9376e;
+    --colorBotonTerciario: #0d0d0d;
+    --contraste: 0;
 }
-html[data-theme='dark']{
-    
+
+html[data-theme='dark'] {
+    --backgroundPrimario: #0f0e17;
+    --backgroundSecundario: #232946;
+    --backgroundTerciario: #f60;
+    --ColorLetrasPrimario: #fffffe;
+    --ColorLetrasSecundario: #a7a9be;
+    --ColorLetrasTerciario: black;
+    --colorBotonPrimario: #ff8906;
+    --colorBotonSecundario: #e53170;
+    --colorBotonTerciario: #fffffe;
+    --contraste: 1;
+}
+
+:root {
+    --FuentePrincipal: ACMESecretAgentBB;
+    --FuenteSecundaria: CREABB;
+}
+*::selection{
+    background-color: var(--backgroundTerciario);
+    color: var(--ColorLetrasTerciario);
+}
+i{
+    user-select: none;
 }

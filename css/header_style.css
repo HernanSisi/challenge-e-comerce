@@ -1,0 +1,108 @@
+.header__login:hover {
+    background-color: var(--colorBotonPrimario);
+}
+
+.header__busqueda___input:focus-visible, .header__busqueda___input:focus {
+    border: none;
+    outline: none;
+}
+
+.header__busqueda___input {
+    border: 0 #0000;
+    background: #0000;
+    padding: 0.3rem 0.5rem;
+    width: calc(100% - 1rem);
+    font-size: 1rem;
+    font-family: var(--FuentePrincipal);
+}
+
+.header__busqueda___icono {
+    background: #0000;
+    border: 0;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    font-family: pictogramas;
+}
+
+.header__login {
+    padding: 1rem 2rem;
+    border: var(--backgroundPrimario) solid 2px;
+    font-family: var(--FuentePrincipal);
+    font-size: 1.15rem;
+    transition: 1s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header__busqueda {
+    display: flex;
+    padding: 5px;
+    background-color: var(--backgroundPrimario);
+    border-radius: 50vh;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.header__logo___texto {
+    margin: 0 3vw 0 1vw;
+    font-family: var(--FuenteSecundaria);
+    font-size: 1.6rem;
+    color: var(--ColorLetrasTerciario);
+}
+
+.header__logo___imagen {
+    height: 2rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.header__principal {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgroundTerciario);
+    background-image: linear-gradient(360deg, #0000003d, var(--backgroundTerciario));
+    padding: 2vh 10vw;
+}
+/* .header--shadow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+} */
+
+.header__busqueda___input::-webkit-search-cancel-button {
+    display: none;
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    background: url("../svg/trash-can-solid.svg") no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header__busqueda___input:focus::-webkit-search-cancel-button {
+    display: inline;
+    opacity: .5;
+    pointer-events: all;
+    filter: invert(var(--contraste));
+}
