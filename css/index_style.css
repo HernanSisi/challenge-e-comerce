@@ -2,9 +2,11 @@ html[data-theme='light'] {
     --backgroundPrimario: #eff0f3;
     --backgroundSecundario: #fffffe;
     --backgroundTerciario: #f60;
+
     --ColorLetrasPrimario: #0d0d0d;
     --ColorLetrasSecundario: #2a2a2a;
     --ColorLetrasTerciario: #eff0f3;
+
     --colorBotonPrimario: #ff8e3c;
     --colorBotonSecundario: #d9376e;
     --colorBotonTerciario: #0d0d0d;
@@ -15,9 +17,11 @@ html[data-theme='dark'] {
     --backgroundPrimario: #0f0e17;
     --backgroundSecundario: #232946;
     --backgroundTerciario: #f60;
+
     --ColorLetrasPrimario: #fffffe;
     --ColorLetrasSecundario: #a7a9be;
     --ColorLetrasTerciario: black;
+
     --colorBotonPrimario: #ff8906;
     --colorBotonSecundario: #e53170;
     --colorBotonTerciario: #fffffe;
@@ -32,6 +36,13 @@ html[data-theme='dark'] {
     background-color: var(--backgroundTerciario);
     color: var(--ColorLetrasTerciario);
 }
+*{
+    transition: .3s color;
+}
 i{
     user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: var(--backgroundPrimario);
 }

@@ -1,0 +1,74 @@
+.carrito{
+    position: fixed;
+    z-index: 99;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50vh;
+    background-color: var(--backgroundTerciario);
+    top: 89vh;
+    left: 94vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.carrito__logo{
+    font-family: pictogramas;
+    color: var(--backgroundPrimario);
+    font-size: 2rem;
+}
+.carrito__contador {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background-color: #8b0000;
+    width: 30px;
+    height: 30px;
+    /* padding: 0.2rem 0.3rem; */
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-family: var(--FuentePrincipal);
+    font-weight: bold;
+    font-size: 1rem;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+.carrito__contador--desactivado{
+    display: none;
+}
+.asa{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    background-color: #0000;
+    height: 100px;
+    width: 100px;
+    border-radius: 50% 0 0 0;
+    box-shadow: aquamarine -80px -80px 0px 80px;
+}
+
+
+.menuCarrito {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,.3);
+    backdrop-filter: blur(5px);
+    z-index: 90;
+}
+
+.menuCarrito__menu {
+    width: 33vw;
+    height: 92vh;
+    /* background-color: var(--backgroundPrimario); */
+    background-color: aqua;
+    position: absolute;
+    top: 89vh;
+    left: 95vw;
+}
